@@ -1,5 +1,11 @@
 import React from 'react'
+import createList from './listFactory'
 
-const jobsPage = () => <div>Job items</div>
+const JobStoriesList = createList('jobstories')
 
-export default jobsPage
+export default () => (
+  <div>
+    <h2>Job stories</h2>
+    <JobStoriesList />
+  </div>
+)

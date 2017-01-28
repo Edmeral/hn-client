@@ -1,5 +1,11 @@
 import React from 'react'
+import createList from './listFactory'
 
-const newPage = () => <div>new items</div>
+const NewStoriesList = createList('newstories')
 
-export default newPage
+export default () => (
+  <div>
+    <h2>New stories</h2>
+    <NewStoriesList />
+  </div>
+)
